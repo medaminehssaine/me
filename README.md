@@ -10,8 +10,6 @@ Welcome to my terminal-style portfolio repository!
 ## Projects
 
 - Project 1: Description
-- Project 2: Description
-- Project 3: Description
 
 ## Contact
 
