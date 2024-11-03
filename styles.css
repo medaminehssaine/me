@@ -10,8 +10,8 @@ body {
 }
 
 ::selection {
-    background-color: rgb(74, 222, 128);
-    color: rgb(17, 24, 39); 
+    background-color: rgb(74, 222, 128); /* Highlight background color */
+    color: rgb(17, 24, 39); /* Highlighted text color */
 }
 
 .container {
@@ -113,7 +113,7 @@ footer {
     transform: scale(1.05);
 }
 
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .content-grid {
         grid-template-columns: 1fr;
