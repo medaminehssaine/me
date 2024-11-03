@@ -189,7 +189,6 @@ const content = {
     }
 };
 
-// Style configuration
 const styles = {
     label: {
         color: "rgb(74, 222, 128)",
@@ -207,18 +206,15 @@ const styles = {
     }
 };
 
-// State management
 const state = {
     selectedIndex: 0,
     files: Object.keys(content)
 };
 
-// DOM elements
 const fileBrowser = document.getElementById('fileBrowser');
 const contentTitle = document.getElementById('contentTitle');
 const contentBody = document.getElementById('contentBody');
 
-// Initialize file browser
 function initializeFileBrowser() {
     fileBrowser.innerHTML = '';
     state.files.forEach((file, index) => {
@@ -231,7 +227,6 @@ function initializeFileBrowser() {
     updateContent();
 }
 
-// Update selected file
 function updateSelectedFile(index) {
     const oldSelected = fileBrowser.children[state.selectedIndex];
     const newSelected = fileBrowser.children[index];
@@ -243,7 +238,6 @@ function updateSelectedFile(index) {
     updateContent();
 }
 
-// Render structured content
 function renderStructuredContent(contentData) {
     const container = document.createElement('div');
     container.className = 'structured-content';
@@ -253,21 +247,18 @@ function renderStructuredContent(contentData) {
         section.className = 'content-section';
         section.style.marginBottom = styles.section.marginBottom;
 
-        // Create label
         const label = document.createElement('div');
         label.style.color = styles.label.color;
         label.style.fontWeight = styles.label.fontWeight;
         label.textContent = item.label;
         section.appendChild(label);
 
-        // Create value container
         const valueContainer = document.createElement('div');
         valueContainer.style.color = styles.value.color;
         valueContainer.style.marginLeft = styles.subsection.marginLeft;
         valueContainer.style.marginTop = styles.subsection.marginTop;
 
         if (Array.isArray(item.value)) {
-            // Handle nested structure
             if (typeof item.value[0] === 'object') {
                 item.value.forEach(subItem => {
                     const subSection = document.createElement('div');
@@ -297,7 +288,6 @@ function renderStructuredContent(contentData) {
                     valueContainer.appendChild(subSection);
                 });
             } else {
-                // Handle simple arrays
                 item.value.forEach(listItem => {
                     const listItemElem = document.createElement('div');
                     listItemElem.textContent = listItem;
@@ -315,7 +305,6 @@ function renderStructuredContent(contentData) {
     return container;
 }
 
-// Update content
 function updateContent() {
     const currentPath = state.files[state.selectedIndex];
     const currentContent = content[currentPath];
@@ -333,7 +322,6 @@ function updateContent() {
     }
 }
 
-// Keyboard navigation
 document.addEventListener('keydown', (e) => {
     switch (e.key) {
         case 'ArrowUp':
@@ -352,11 +340,9 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Initialize the application
 document.addEventListener('DOMContentLoaded', () => {
     initializeFileBrowser();
     
-    // Add click handler for resume link
     const resumeLink = document.querySelector('a[href="#resume"]');
     resumeLink.addEventListener('click', (e) => {
         e.preventDefault();
