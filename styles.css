@@ -10,8 +10,8 @@ body {
 }
 
 ::selection {
-    background-color: rgb(74, 222, 128); /* Highlight background color */
-    color: rgb(17, 24, 39); /* Highlighted text color */
+    background-color: rgb(74, 222, 128);
+    color: rgb(17, 24, 39);
 }
 
 .container {
@@ -65,7 +65,6 @@ header p {
     color: rgb(17, 24, 39);
 }
 
-/* Content viewer header */
 .content-header {
     margin-bottom: 0.5rem;
     display: flex;
@@ -79,7 +78,6 @@ header p {
     white-space: pre-wrap;
 }
 
-/* Footer styles */
 footer {
     margin-top: 1rem;
     font-size: 0.975rem;
@@ -115,7 +113,6 @@ footer {
     transform: scale(1.05);
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .content-grid {
         grid-template-columns: 1fr;
