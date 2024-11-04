@@ -9,7 +9,11 @@ Welcome to my terminal-style portfolio repository!
 
 ## Projects
 
-- Project 1: Description
+- Projects and their description
+
+## Content
+
+- The content is written as a json object 
 
 ## Contact
 
