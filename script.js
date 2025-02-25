@@ -89,6 +89,9 @@ const content = {
                     "React.js",
                     "Django",
                     "Node.js",
+                    "PHP",
+                    "MySQL/SQLite/PostgreSQL",
+                    "Java/Spring Boot",
                     "RESTful APIs"
                 ]
             },
@@ -110,36 +113,7 @@ const content = {
         content: [
             {
                 label: "Filière Fit",
-                value: [
-                    {
-                        label: "Overview",
-                        value: "An intelligent web platform helping students predict their acceptance chances into different majors using machine learning and historical data analysis."
-                    },
-                    {
-                        label: "Key Features",
-                        value: [
-                            "Advanced predictive analytics engine",
-                            "Interactive data visualizations",
-                            "Personalized recommendations",
-                            "User-friendly interface",
-                            "Real-time predictions"
-                        ]
-                    },
-                    {
-                        label: "Technologies Used",
-                        value: [
-                            "Frontend: React.js, Tailwind CSS",
-                            "Backend: Node.js, Express",
-                            "Database: MongoDB",
-                            "ML Pipeline: Python, scikit-learn",
-                            "Deployment: Docker, AWS"
-                        ]
-                    },
-                    {
-                        label: "Impact",
-                        value: "Helped hundreds of students make informed decisions about their academic paths through data-driven insights and predictions."
-                    }
-                ]
+                value:  "An intelligent web platform helping students predict their acceptance chances into different majors using machine learning and historical data analysis."
             }
         ]
     },
