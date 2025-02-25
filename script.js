@@ -129,8 +129,8 @@ const content = {
                         value: "Leading club initiatives and overseeing technical workshops and events"
                     },
                     {
-                        label: "Head of Dev Training (July 2024 - Present)",
-                        value: "Coordinating and conducting web development training sessions"
+                        label: "Head of Software Dev Training (July 2024 - Present)",
+                        value: "Coordinating and conducting software development training sessions/projects"
                     },
                     {
                         label: "Front End Web Dev Instructor (Sep 2023 - Jan 2024)",
@@ -141,7 +141,7 @@ const content = {
                         value: "Secured funding for Arts et Métiers Programming Contest 3, managed event logistics, and developed sponsorship proposals"
                     },
                     {
-                        label: "Member (Sep 2022 - May 2023)",
+                        label: "Member (Sep 2022 - May 2024)",
                         value: "Participated in competitive programming and enhanced C++ skills"
                     }
                 ]
